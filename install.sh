@@ -27,7 +27,6 @@ create_mainfest_file(){
     echo "内存大小：${IBM_MEM_SIZE}"
     read -p "请输入你的应用所在区域(不知道的看应用URL，cf前面的us-south就是)：" IBM_APP_REGION
     echo "应用所在区域：${IBM_APP_REGION}"
-
     read -p "请输入机器人token：" BOT_TOKEN
     while [[ "${#BOT_TOKEN}" != 46 ]]; do
     echo "机器人TOKEN输入不正确，请重新输入"
